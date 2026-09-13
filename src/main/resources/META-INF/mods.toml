@@ -50,6 +50,6 @@ side = "BOTH"
 [[dependencies."ducktech"]]
 modId = "pipe_api"
 mandatory = true
-versionRange = "[1.0.1,)"
+versionRange = "[1.0.5,)"
 ordering = "NONE"
 side = "BOTH"
