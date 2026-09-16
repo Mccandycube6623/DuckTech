@@ -125,8 +125,12 @@ public class DTBlocks {
             () -> new Block(METAL_OTHER_BLOCK_PROPERTIES));
     public static final RegistryObject<Block> RUBBER_PLANK = registerBlock("rubber_plank",
             () -> new Block(METAL_OTHER_BLOCK_PROPERTIES));
-    public static final RegistryObject<Block> RUBBER_LEAVES = registerBlock("rubber_leaves",
-            () -> new Block(METAL_OTHER_BLOCK_PROPERTIES));
+    public static final RegistryObject<Block> RUBBER_LEAVES = BLOCKS.register("rubber_leaves",
+    () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+        .noOcclusion() 
+        .isViewBlocking((state, world, pos) -> false) 
+        .isSuffocating((state, world, pos) -> false) 
+    ));
 
 
     //机器

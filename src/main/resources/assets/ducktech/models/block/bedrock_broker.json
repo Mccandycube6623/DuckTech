@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "ducktech:block/bedrock_broker_front",
-    "side": "ducktech:block/bedrock_broker_front",
-    "top": "ducktech:block/bedrock_broker_top"
-  }
-}

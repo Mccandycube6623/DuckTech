@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "ducktech:block/rubber_leaves"
+  }
+}

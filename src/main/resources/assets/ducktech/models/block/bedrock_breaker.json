@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "ducktech:block/bedrock_breaker_front",
+    "side": "ducktech:block/bedrock_breaker_front",
+    "top": "ducktech:block/bedrock_breaker_top"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "lit=true,facing=north": {
+      "model": "ducktech:block/essence_earth_furnace_on"
+    },
+    "lit=true,facing=east": {
+      "model": "ducktech:block/essence_earth_furnace_on",
+      "y": 90
+    },
+    "lit=true,facing=south": {
+      "model": "ducktech:block/essence_earth_furnace_on",
+      "y": 180
+    },
+    "lit=true,facing=west": {
+      "model": "ducktech:block/essence_earth_furnace_on",
+      "y": 270
+    },
+    "lit=false,facing=north": {
+      "model": "ducktech:block/essence_earth_furnace"
+    },
+    "lit=false,facing=east": {
+      "model": "ducktech:block/essence_earth_furnace",
+      "y": 90
+    },
+    "lit=false,facing=south": {
+      "model": "ducktech:block/essence_earth_furnace",
+      "y": 180
+    },
+    "lit=false,facing=west": {
+      "model": "ducktech:block/essence_earth_furnace",
+      "y": 270
+    }
+  }
+}

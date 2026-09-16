@@ -1,5 +1,5 @@
 {
-  "parent": "ducktech:block/bedrock_broker",
+  "parent": "ducktech:block/rubber_log",
   "display": {
     "thirdperson": {
       "rotation": [
