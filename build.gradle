@@ -188,6 +188,9 @@ dependencies {
     jarJar("ducktech:recipes_api:[1.20.1forge-1.1.0,)")
 
     runtimeOnly fg.deobf("cn.ksmcbrigade:mcmod-doll:1.0")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-1.20.1-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
@@ -200,6 +203,38 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
+tasks.named('compileJava', JavaCompile) {
+    options.annotationProcessorPath = configurations.annotationProcessor
+    options.compilerArgs += [
+            '-AoutRefMapFile=' + file("/refmaps/ducktech.refmap.json").absolutePath,
+            '-AdefaultObfuscationEnv=searge',
+            '-AmappingTypes=tsrg'
+    ]
+}
+
+// 关键：打包时把 refmap 放进 jar 的根目录
+jar {
+    from("/refmaps/ducktech.refmap.json") {
+        into '/'
+    }
+    manifest {
+        attributes([
+                "MixinConfigs": "ducktech.mixins.json"
+        ])
+    }
+}
+
+mixin {
+    add sourceSets.main, "ducktech.refmap.json"
+}
+
+jar {
+    manifest {
+        attributes([
+                "MixinConfigs": "ducktech.mixins.json"
+        ])
+    }
+}
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
 // When "copyIdeResources" is enabled, this will also run before the game launches in IDE environments.
