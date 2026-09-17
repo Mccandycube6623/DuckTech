@@ -11,7 +11,7 @@ import org.quiltmc.users.duckteam.DuckTech.DuckTech;
 public class FE2ThermalEssenceMachineScreen extends AbstractContainerScreen<FE2ThermalEssenceMachineMenu> {
 
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(DuckTech.MODID, "textures/screen/levitation.png");
+            new ResourceLocation(DuckTech.MODID, "textures/screen/fe2tem.png");
 
     public FE2ThermalEssenceMachineScreen(FE2ThermalEssenceMachineMenu menu, Inventory inv, Component title) {
         super(menu, inv, title);

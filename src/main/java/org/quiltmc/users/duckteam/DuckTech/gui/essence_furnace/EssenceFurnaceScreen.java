@@ -11,7 +11,7 @@ import org.quiltmc.users.duckteam.DuckTech.DuckTech;
 
 public class EssenceFurnaceScreen extends AbstractContainerScreen<EssenceFurnaceMenu> {
     public static final ResourceLocation GUI_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
-            "textures/screen/processor.png");
+            "textures/screen/ef.png");
     public static final ResourceLocation ARROW_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
             "textures/screen/arrow_progress.png");
 
