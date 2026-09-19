@@ -11,7 +11,7 @@ import org.quiltmc.users.duckteam.DuckTech.DuckTech;
 
 public class InjectionMachineScreen extends AbstractContainerScreen<InjectionMachineMenu> {
     public static final ResourceLocation GUI_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
-            "textures/screen/jhj.png");
+            "textures/screen/im.png");
     public static final ResourceLocation ARROW_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
             "textures/screen/arrow_progress.png");
 

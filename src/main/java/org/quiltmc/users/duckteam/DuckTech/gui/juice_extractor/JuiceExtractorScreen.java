@@ -10,7 +10,7 @@ import net.minecraft.world.entity.player.Inventory;
 public class JuiceExtractorScreen extends AbstractContainerScreen<JuiceExtractorMenu> {
 
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation("ducktech", "textures/gui/juice_extractor.png");
+            new ResourceLocation("ducktech", "textures/screen/juice_extractor.png");
 
     public JuiceExtractorScreen(JuiceExtractorMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);

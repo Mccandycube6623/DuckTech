@@ -1,5 +1,6 @@
 package org.quiltmc.users.duckteam.DuckTech.blocks;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.material.MapColor;

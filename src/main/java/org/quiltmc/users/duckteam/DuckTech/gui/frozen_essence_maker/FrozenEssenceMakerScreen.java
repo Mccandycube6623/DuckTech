@@ -11,7 +11,7 @@ import org.quiltmc.users.duckteam.DuckTech.DuckTech;
 
 public class FrozenEssenceMakerScreen extends AbstractContainerScreen<FrozenEssenceMakerMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(DuckTech.MODID, "textures/screen/one_to_one.png");
+            new ResourceLocation(DuckTech.MODID, "textures/screen/fem.png");
 
     public static final ResourceLocation ARROW_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
             "textures/screen/arrow_progress.png");

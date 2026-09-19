@@ -10,7 +10,7 @@ import org.quiltmc.users.duckteam.DuckTech.DuckTech;
 
 public class ExpulsionMachineScreen extends AbstractContainerScreen<ExpulsionMachineMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(DuckTech.MODID, "textures/screen/levitation.png");
+            new ResourceLocation(DuckTech.MODID, "textures/screen/em.png");
 
     public ExpulsionMachineScreen(ExpulsionMachineMenu menu, Inventory playerInv, Component title) {
         super(menu, playerInv, title);

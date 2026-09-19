@@ -11,7 +11,7 @@ import org.quiltmc.users.duckteam.DuckTech.DuckTech;
 
 public class EssenceConversionMachineScreen extends AbstractContainerScreen<EssenceConversionMachineMenu> {
     public static final ResourceLocation GUI_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
-            "textures/screen/jhj.png");
+            "textures/screen/ecm.png");
     public static final ResourceLocation ARROW_TEXTURE = ResourceLocation.fromNamespaceAndPath(DuckTech.MODID,
             "textures/screen/arrow_progress.png");
 
